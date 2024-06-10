@@ -1,0 +1,21 @@
+{
+  "name": "node-bind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "eslint": "9.x",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "globals": "^15.4.0",
+    "typescript-eslint": "^7.12.0"
+  }
+}
