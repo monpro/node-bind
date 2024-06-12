@@ -12,6 +12,10 @@ export default class AutoBinder<O> {
         this.bindings.get(property)!.push(callback as Callback<O[keyof O]>);
     }
 
+    bindMultiple<K extends keyof O>(object: O, properties: K[], callback: Callback<O[K]>) {
+        properties.forEach(property => this.bind(object,property, callback))
+    }
+
     unbind<K extends keyof O>(object: O, property: K): void {
         if (this.bindings.has(property)) {
             this.bindings.set(property, [])
